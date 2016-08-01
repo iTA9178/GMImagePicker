@@ -38,9 +38,9 @@
     picker.delegate = self;
     picker.title = @"Custom title";
     
-    picker.customDoneButtonTitle = @"Finished";
-    picker.customCancelButtonTitle = @"Nope";
-    picker.customNavigationBarPrompt = @"Take a new photo or select an existing one!";
+//    picker.customDoneButtonTitle = @"Finished";
+//    picker.customCancelButtonTitle = @"Nope";
+//    picker.customNavigationBarPrompt = @"Take a new photo or select an existing one!";
     
     picker.colsInPortrait = 3;
     picker.colsInLandscape = 5;
@@ -53,7 +53,6 @@
 //    picker.showCameraButton = YES;
 //    picker.autoSelectCameraImages = YES;
     
-    picker.modalPresentationStyle = UIModalPresentationPopover;
 
 //    picker.mediaTypes = @[@(PHAssetMediaTypeImage)];
 
@@ -71,6 +70,8 @@
 //    picker.pickerFontHeaderSize = 17.0f;
 //    picker.pickerStatusBarStyle = UIStatusBarStyleLightContent;
 //    picker.useCustomFontForNavigationBar = YES;
+    
+    picker.modalPresentationStyle = UIModalPresentationPopover;
     
     UIPopoverPresentationController *popPC = picker.popoverPresentationController;
     popPC.permittedArrowDirections = UIPopoverArrowDirectionAny;

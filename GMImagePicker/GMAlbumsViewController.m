@@ -350,7 +350,7 @@ static NSString * const CollectionCellReuseIdentifier = @"CollectionCell";
 {
     UITableViewHeaderFooterView *header = (UITableViewHeaderFooterView *)view;
     header.contentView.backgroundColor = [UIColor clearColor];
-    header.backgroundView.backgroundColor = [UIColor clearColor];
+    header.backgroundView.backgroundColor = [UIColor whiteColor];
 
     // Default is a bold font, but keep this styled as a normal font
     header.textLabel.font = [UIFont fontWithName:self.picker.pickerFontName size:self.picker.pickerFontNormalSize];
@@ -371,7 +371,6 @@ static NSString * const CollectionCellReuseIdentifier = @"CollectionCell";
     }
     return title;
 }
-
 
 #pragma mark - PHPhotoLibraryChangeObserver
 
